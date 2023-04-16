@@ -267,11 +267,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" id="name" required>
+                        <input type="email" placeholder="Email" class="contact__input" id="emailfrom" required>
+                        <textarea name="" id="message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -294,5 +294,22 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "kikawithkika@gmail.com",
+                    Password : "D43C2E50A7A8D92E7500967148323BFB5DB0",
+                    To : document.getElementById("emailfrom").value,
+                    From : 'kikawithkika@gmail.com',
+                    Subject : "comment",
+                    Body : "Name: " + document.getElementById("name").value + "<br>" + "Message: " + document.getElementById("message").value 
+
+                }).then(
+                message => alert("message sent")
+                );
+            }
+        </script>
     </body>
 </html>
