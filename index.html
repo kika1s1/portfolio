@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Tamirat Porfolio</title>
+        <title>Tamirat</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -296,23 +296,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){
-                Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "kikawithkika@gmail.com",
-                    Password : "D43C2E50A7A8D92E7500967148323BFB5DB0",
-                    To : document.getElementById("emailfrom").value,
-                    From : 'kikawithkika@gmail.com',
-                    Subject : "comment",
-                    Body : "Name: " + document.getElementById("name").value + "<br>" + "Message: " + document.getElementById("message").value 
-
-                }).then(
-                message => alert("message sent")
-                );
-            }
-        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
