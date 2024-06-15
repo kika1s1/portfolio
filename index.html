@@ -1,301 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Tamirat Porfolio</title>
+  </head>
 
-        <title>Tamirat</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Tamirat</a>
-                </div>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="index.html#home" class="nav__logo">Tamirat</a>
+        </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#skills" class="nav__link">Skills</a>
+            </li>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Tamirat</span><br>MERN Developer</h1>
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__mode">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+          <div class="dark-mode-toggle" id="dark-mode-toggle">
+            <i class="bx bx-moon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                    <a href="#contact" class="button">Contact</a>
-                </div>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Versatile</span
+            ><br />Full-Stack Dev.
+          </h1>
+          <a href="#contact" class="button">Contact</a>
+          <a
+            href="assets/resume.pdf"
+            download="tamirat/resume.pdf"
+            class="button download-btn"
+            >Resume</a
+          >
+        </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/tamirat-kebede/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="https://github.com/kika1s1l" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/kika1s1/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin nav__link"></i
+          ></a>
+          <a href="https://github.com/kika1s1" class="home__social-icon"
+            ><i class="bx bxl-github nav__link"></i
+          ></a>
+          <a href="https://leetcode.com/kika1s1" class="home__social-icon">
+            <img
+              class="nav__link"
+              src="assets/img/simple-icons--leetcode.png"
+              alt=""
+              width="24"
+            />
+          </a>
+        </div>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            
-                            <image  x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Tamirat</h2>
-                        <p class="about__text">I am a skilled Full-stack Web Developer with over a year of experience in building web applications. I am experienced in HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, JQuery, Node.Js, React.Js, Material-UI, and Python. I have completed a 980+ hour Bootcamp structure, and a 12-month Full Stack Web Development course at ALX, where I specialized in backend development to tackle web development problems. I am comfortable in rapidly changing environments and enjoy collaborating with others to deliver high-quality web applications.</p>
-
-                        <p>Aside from my technical skills, I am a strong communicator and problem solver. I believe effective communication is essential in any team, especially when working on complex projects. My ability to identify problems and develop solutions has helped me deliver projects on time and within budget. I am always looking for ways to improve my skills and stay up-to-date with the latest trends and best practices in the industry.</p>
-                        <p>I believe that technology has the potential to transform lives and create a better world. As a Full-stack Web Developer, I am excited to contribute to this transformation by developing innovative web applications that provide value to users.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"></p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <i class='bx bxl-python' ></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-nodejs'></i>
-                               
-                                <span class="skills__name">Node</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                   
-                        
-                        
-                        
-                           <div class="skills__data">
-                            <div class="skills__names">
-<!--                                 <i class='bx bxl-nodejs'></i> -->
-                               
-                                <span class="skills__name">Mongodb</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                           <div class="skills__data">
-                            <div class="skills__names">
-<!--                                 <i class='bx bxl-nodejs'></i> -->
-                               
-                                <span class="skills__name">Epress</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-react' ></i>
-                                <span class="skills__name">React</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work1.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://calm-faloodeh-8b5fea.netlify.app " target="_blank" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="https://netflix-493fd.web.app/" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-    
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                        <p>This project is under development</p>
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                        <p>This project is under development</p>
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                        <p>This project is under development</p>
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input" id="name" required>
-                        <input type="email" placeholder="Email" class="contact__input" id="emailfrom" required>
-                        <textarea name="" id="message" cols="0" rows="10" class="contact__input" required></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Tamirat</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <div class="home__img">
+          <img class="profile" src="assets/img/profile.jpg" alt="" />
+        </div>
+      </section>
+      <!--===== Projects =====-->
+      <section class="work section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="project_intro">
+          A diverse project list showcasing my innovative solutions across web
+          and mobile applications.
+        </p>
+        <div class="work__container bd-grid">
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/bootcamp.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>Frontend Community</h1>
+              <p class="description">
+                Community Web. for passionate learners, engage in discussions,
+                and collaborate with fellow developers.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app"
+                target="_blank"
+              >
+                visit the project
+              </a>
             </div>
-            <p class="footer__copy">&#169; TechwithKIKA. All rigths reserved</p>
-        </footer>
+          </div>
 
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/ouput.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>E-commerce</h1>
+              <p class="description">
+                User-friendly online store for effective marketing strategies
+                and optimizing customer experience.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app"
+                target="_blank"
+              >
+                visit the project
+              </a>
+            </div>
+          </div>
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/game-light.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>Genre</h1>
+              <p class="description">
+                Dynamic online platform dedicated to exploring and celebrating
+                movie genres.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app "
+                target="_blank"
+              >
+                visit the project
+              </a>
+            </div>
+          </div>
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/nature.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>Nature's Wonderland</h1>
+              <p class="description">
+                Immersive online platform dedicated to exploring and celebrating
+                the breathtaking beauty of nature's wonders around the world.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app "
+                target="_blank"
+              >
+                visit the project
+              </a>
+            </div>
+          </div>
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/growth.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>GrowthTrack</h1>
+              <p class="description">
+                The ultimate platform designed to help startups track and
+                measure their progress in one convenient location.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app "
+                target="_blank"
+              >
+                visit the project
+              </a>
+            </div>
+          </div>
+          <div class="work__card">
+            <div class="project__description">
+              <img
+                class="work__img"
+                src="assets/img/game-dark.png"
+                alt=""
+                onclick="showFullImage(this)"
+              />
+              <h1>Genre Dark</h1>
+              <p class="description">
+                Dynamic online platform dedicated to exploring and celebrating
+                movie genres.
+              </p>
+              <a
+                class="see-more"
+                href="https://calm-faloodeh-8b5fea.netlify.app "
+                target="_blank"
+              >
+                visit the project
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <h2 class="skills__subtitle">Profesional Skills</h2>
+        <p class="skills__text">
+          I have leveraged my skills on various projects for over 2 years.
+        </p>
+        <div class="skills__container bd-grid">
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+            <div>
+              <span class="skills__percentage">95%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">65%</span>
+            </div>
+          </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="js/main.js"></script>
-    </body>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-python"></i>
+              <span class="skills__name">Python</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+
+            <div>
+              <span class="skills__percentage">95%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs"></i>
+
+              <span class="skills__name">Node</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">100%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs"></i>
+              <span class="skills__name">Mongodb</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">100%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs"></i>
+              <span class="skills__name">Epress</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">100%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-react"></i>
+              <span class="skills__name">React</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">90%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Hi, I'am Tamirat</h2>
+            <p class="about__text">
+              A skilled Full-stack Web Developer with over 2+ year of experience
+              in building web applications. I am experienced in HTML, CSS,
+              Tailwind CSS, Bootstrap, JavaScript, JQuery, Node.Js, React.Js,
+              Material-UI, and Python. I have completed a 980+ hour Bootcamp
+              structure, and a 12-month Full Stack Web Development course at
+              ALX, where I specialized in backend development to tackle web
+              development problems.
+            </p>
+            <br />
+
+            <p>
+              I believe that technology has the potential to transform lives and
+              create a better world. As a Full-stack Web Developer, I am excited
+              to contribute to this transformation by developing innovative web
+              applications that provide value to users.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form class="contact__form">
+            <input
+              type="text"
+              placeholder="Name"
+              class="contact__input"
+              id="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="contact__input"
+              id="emailfrom"
+              required
+            />
+            <textarea
+              name=""
+              id="message"
+              cols="0"
+              rows="10"
+              class="contact__input"
+              required
+              placeholder="Write a message ..."
+            ></textarea>
+            <input type="submit" value="Send" class="contact__button button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="portfolio-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">
+            &copy; 2024 Tamirat Kebede. All rights reserved.
+          </p>
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li><a class="nav__link" href="#home">Home</a></li>
+              <li><a class="nav__link" href="#projects">Projects</a></li>
+              <li><a class="nav__link" href="#skills">Skills</a></li>
+              <li><a class="nav__link" href="#about">About</a></li>
+              <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
